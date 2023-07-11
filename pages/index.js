@@ -6,7 +6,9 @@ function Home() {
             <h2>LiSi Sistemas Digitais</h2>
             <h5>Humberto Lima Jr</h5>
             <hr />
-            <CapsLock>Lisi Sistemas</CapsLock>
+            <a href='/sobre'>Acessar página Sobre</a>
+            <br />
+            <a href='/tempo'>Acessar página Tempo</a>
             <hr />
             <Contador />
         </div>
