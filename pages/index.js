@@ -1,25 +1,35 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 function Home() {
     return (
         <div>
-            <h1>Home</h1>
+            <h2>LiSi Sistemas Digitais</h2>
+            <h5>Humberto Lima Jr</h5>
+            <hr />
+            <CapsLock>Lisi Sistemas</CapsLock>
+            <hr />
             <Contador />
         </div>
     )
 }
 
+function CapsLock(props) {
+    const textoFilho = props.children;
+    const textoSaida = textoFilho.toUpperCase();
+    return <div>{textoSaida}</div>
+}
 
 function Contador() {
+
     const [contador, setContador] = useState(1);
 
-    function adicionarContador() {
+    function addContador() {
         setContador(contador + 1);
     }
     return (
         <div>
             <div>{contador}</div>
-            <button onClick={adicionarContador}>Adicionar</button>
+            <button onClick={addContador}>Adicionar</button>
         </div>
     )
 }
