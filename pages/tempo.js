@@ -4,7 +4,7 @@ function Tempo(props) {
     return (
         <div>
             <div>{dynamicDateString} (dinâmico)</div>
-            <div>{props.staticDateString} (estático - com delay)</div>
+            <div>{props.staticDateString} (estático)</div>
         </div>
     )
 }
@@ -18,7 +18,7 @@ export async function getStaticProps() {
         props: {
             staticDateString
         },
-        revalidate: 10
+        revalidate: 1
     }
 }
 
